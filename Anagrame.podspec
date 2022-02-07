@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "This is a anagram framework"
 
   spec.description  = "This is a anagram framework it will take two string and return that is anagram or not"
-   spec.plateform = :ios, "14.3"
+   spec.platform = :ios, "14.3"
   spec.homepage     = "http://EXAMPLE/Anagrame"
  
   spec.license      = "MIT"
