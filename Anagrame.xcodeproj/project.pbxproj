@@ -10,6 +10,7 @@
 		F92B8E8527B0F91B0049F512 /* Anagrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F92B8E7B27B0F91B0049F512 /* Anagrame.framework */; };
 		F92B8E8A27B0F91B0049F512 /* AnagrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B8E8927B0F91B0049F512 /* AnagrameTests.swift */; };
 		F92B8E8C27B0F91B0049F512 /* Anagrame.h in Headers */ = {isa = PBXBuildFile; fileRef = F92B8E7E27B0F91B0049F512 /* Anagrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F92B8E9827B0FA670049F512 /* CheckAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B8E9727B0FA670049F512 /* CheckAnagram.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		F92B8E8427B0F91B0049F512 /* AnagrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnagrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92B8E8927B0F91B0049F512 /* AnagrameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnagrameTests.swift; sourceTree = "<group>"; };
 		F92B8E8B27B0F91B0049F512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F92B8E9727B0FA670049F512 /* CheckAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnagram.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				F92B8E7E27B0F91B0049F512 /* Anagrame.h */,
+				F92B8E9727B0FA670049F512 /* CheckAnagram.swift */,
 				F92B8E7F27B0F91B0049F512 /* Info.plist */,
 			);
 			path = Anagrame;
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					F92B8E7A27B0F91B0049F512 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					F92B8E8327B0F91B0049F512 = {
 						CreatedOnToolsVersion = 12.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92B8E9827B0FA670049F512 /* CheckAnagram.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		F92B8E9027B0F91B0049F512 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vesta.Anagrame;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		F92B8E9127B0F91B0049F512 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +395,7 @@
 		F92B8E9327B0F91B0049F512 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AnagrameTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		F92B8E9427B0F91B0049F512 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AnagrameTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
