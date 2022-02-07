@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Anagrame"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.0"
   spec.summary      = "This is a anagram framework"
 
   spec.description  = "This is a anagram framework it will take two string and return that is anagram or not"
@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Suresh Patel" => "suresh.patel@vesta.io" }
  
 
-  spec.source       = { :git => "https://github.com/sureshiosd/Anagrame.git", :tag => "0.0.1" }
+  spec.source       = { :git => "https://github.com/sureshiosd/Anagrame.git", :tag => "1.0.0" }
 
   spec.source_files  = "Anagrame"
   spec.exclude_files = "Classes/Exclude"
